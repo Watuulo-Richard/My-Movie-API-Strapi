@@ -1,5 +1,8 @@
 let movieListContainer = document.querySelector('section')
-let apiUrl = 'http://localhost:1337/api/movies/?populate=*'
+
+// let apiUrl = 'http://localhost:1337/api/movies/?populate=*'
+
+let apiUrl = "http://localhost:1337/api/movies/?populate=movie_poster.imagePoster";
 
 async function fetchRichardData(){
     let response = await fetch(apiUrl)
@@ -15,12 +18,15 @@ async function fetchRichardData(){
 function movieProfile(movie) {
     let div = document.createElement('div')
     let subHeading = document.createElement('h3')
+    let movieImage = document.createElement('img')
     let subHeadingTwo = document.createElement('h4')
     let paragraph = document.createElement('p')
 
 
     // adding actual values from the API I created
-
+    //for adding images it will be (movie.attributes.movie_poster.data.attributes.imagePoster.data.attributes.url:)
+    movieImage.setAttribute('src', movie.attributes.movie_poster.data.attributes.imagePoster.data.attributes.formats.large)
+    
     //for the subHeading it will be (movie.attributes.movieTitle:)
     let movieTitle = `${movie.attributes.movieTitle}`
     subHeading.innerText = movieTitle
