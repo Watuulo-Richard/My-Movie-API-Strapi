@@ -6,17 +6,11 @@ async function fetchRichardData(){
     let data = await response.json()
     console.log(data)
 
-    return data.data; // Assuming the API returns { data: [...] }
-
-    /*         // Return the actual array of movies
-        
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    }             */
+    return data.data;
     
 }
 
-fetchRichardData()
+// fetchRichardData()
 
 function movieProfile(movie) {
     let div = document.createElement('div')
@@ -47,7 +41,7 @@ function movieProfile(movie) {
 
 }
 
-movieProfile()
+// movieProfile()
 
 
 
