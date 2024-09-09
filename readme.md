@@ -1,6 +1,6 @@
 # Movie Custom Web API
 
-Welcome To My Custom  Web API Made By Strapi
+Welcome To My Custom  Web API Made By Strapi By Watuulo-Richard
 
 <img src="./images/strapi-featured-image-scaled.jpg"  />
 
@@ -9,19 +9,19 @@ Welcome To My Custom  Web API Made By Strapi
 - HTML
 - Javascript
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4BYDG0NUxOT21ZHoX6AKDtcH6lXrDhqEcFg&s" width="600" height="" />
-
 ## Usage
 
 This website is built with [Plain HTML & Javascript]
 
 In order to customize this website, you need to install [Node.js](https://nodejs.org/en/). Then, clone this repository and run:
 
+To create your strapi files for changes, run:
+
 ```bash
 npx create-strapi-app@latest my-strapi-project --quickstart
 ```
 
-To watch your Sass files for changes, run:
+To watch your strapi files for changes, run:
 
 ```bash
 npm run develop
